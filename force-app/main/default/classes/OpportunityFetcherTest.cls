@@ -12,7 +12,7 @@ private class OpportunityFetcherTest { @isTest
         List<Opportunity> resultOpportunities = OpportunityFetcher.getTelecomOpportunities();
         // Assert that the retrieved opportunity list is not empty
         System.assertNotEquals(0, resultOpportunities.size(), 'No opportunities retrieved');
-        // Assert that the retrieved opportunity is the one created
+        // 123 Assert that the retrieved opportunity is the one created
         System.assertEquals(testOpportunity.Id, resultOpportunities[0].Id, 'Incorrect opportunity retrieved');
     }
 }
